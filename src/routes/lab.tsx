@@ -36,13 +36,13 @@ export const Route = createFileRoute("/lab")({
 });
 
 function useTemporal() {
-  const temporal = (useLab as any).temporal;
-  const state = useStore(temporal);
+  const temporal = (useLab as unknown as { temporal: any }).temporal;
+  const state = useStore(temporal) as { pastStates: unknown[]; futureStates: unknown[] };
   return {
     undo: () => temporal.getState().undo(),
     redo: () => temporal.getState().redo(),
-    pastStates: state.pastStates as unknown[],
-    futureStates: state.futureStates as unknown[],
+    pastStates: state.pastStates,
+    futureStates: state.futureStates,
   };
 }
 
