@@ -79,7 +79,8 @@ function Lab() {
         mode={s.mode}
       />
 
-      <div className="mx-auto max-w-7xl px-4 py-6">
+      <main className="mx-auto max-w-7xl px-4 py-6">
+        <h1 className="sr-only">Randomness Lab — interactive case analysis</h1>
         {/* Mobile drawer for left panel */}
         <div className="mb-4 flex items-center justify-between lg:hidden">
           <Sheet>
@@ -113,7 +114,7 @@ function Lab() {
         <p className="mt-8 text-center text-xs text-muted-foreground">
           ⌘Z undo · ⌘⇧Z redo · ⌘. reset
         </p>
-      </div>
+      </main>
     </div>
   );
 }

@@ -11,8 +11,25 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Randomness Lab — Luck vs skill, made visible" },
       { name: "description", content: "Inspect cases, separate luck from skill, see the failures hidden by survivorship bias." },
-      { property: "og:title", content: "Randomness Lab" },
-      { property: "og:description", content: "Inspect cases, separate luck from skill." },
+      { property: "og:title", content: "Randomness Lab — Luck vs skill, made visible" },
+      { property: "og:description", content: "Inspect cases, separate luck from skill, and reveal the failures hidden by survivorship bias." },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Randomness Lab",
+          url: "https://randomness-insight-lab.lovable.app",
+          description: "A sandbox for understanding luck vs skill, survivorship bias, and decision quality under uncertainty.",
+          publisher: {
+            "@type": "Organization",
+            name: "Randomness Lab",
+            url: "https://randomness-insight-lab.lovable.app",
+          },
+        }),
+      },
     ],
   }),
   component: Home,

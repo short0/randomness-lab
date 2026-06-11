@@ -1,0 +1,9 @@
+# Randomness Lab
+
+> An interactive sandbox for understanding luck vs skill, survivorship bias, and decision quality under uncertainty. Inspired by Fooled by Randomness.
+
+## Pages
+
+- [Home](/): Overview, presets, and how the lab works.
+- [Lab](/lab): Open a case, inspect luck vs skill, reveal missing data, and update your judgment.
+- [About](/about): What Randomness Lab is and the ideas behind it.
