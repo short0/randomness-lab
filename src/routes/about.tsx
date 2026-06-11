@@ -5,7 +5,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Randomness Lab" },
-      { name: "description", content: "What Randomness Lab is and how to use it." },
+      { name: "description", content: "Learn what Randomness Lab is, how it teaches luck vs skill, survivorship bias, and decision quality under uncertainty." },
       { property: "og:title", content: "About Randomness Lab" },
       { property: "og:description", content: "A teaching tool for luck, skill, and survivorship bias." },
     ],
