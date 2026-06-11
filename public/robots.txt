@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://randomness-insight-lab.lovable.app/sitemap.xml
