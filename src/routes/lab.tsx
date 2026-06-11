@@ -114,7 +114,7 @@ function Lab() {
         <p className="mt-8 text-center text-xs text-muted-foreground">
           ⌘Z undo · ⌘⇧Z redo · ⌘. reset
         </p>
-      </div>
+      </main>
     </div>
   );
 }
